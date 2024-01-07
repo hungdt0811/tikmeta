@@ -1,0 +1,220 @@
+@import 'font';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ticket-area {
+    display: grid;
+    grid-template-columns: 65% auto;
+    gap: 10px;
+
+    .ticket-template {
+        // background-color: #fcc858;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-custom {
+            margin: 20px;
+            display: none;
+
+            .img-area {
+
+                .image-container {
+                    border: 1px solid #000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ccc;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .client-img {
+                        position: absolute;
+                        background-color: #00000000;
+                        -webkit-clip-path: circle(50%);
+                        clip-path: circle(50%);
+                        aspect-ratio: 1/1;
+
+                        img {
+                            width: 100%;
+                            background-color: #000;
+                        }
+                    }
+
+                    .customer-name {
+                        position: absolute;
+                        color: #fff;
+                        text-align: center;
+                        right: 0px;
+                        width: 50%;
+
+                        p {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+
+            .upload-img {
+                margin: 20px 0;
+                text-align: center;
+            }
+        }
+
+        .ticket-type-1 {
+
+            .img-area {
+
+                .image-container {
+                    aspect-ratio: 2048/1446;
+                    width: 700px;
+
+                    img[data-input="bg-input"] {
+                        aspect-ratio: 2048/1446;
+                    }
+
+                    .client-img {
+                        top: 77px;
+                        right: 98px;
+                        width: 151px;
+                    }
+
+                    .customer-name {
+                        bottom: 106px;
+                    }
+                }
+            }
+        }
+
+        .ticket-type-2 {
+
+            .img-area {
+
+                .image-container {
+                    aspect-ratio: 1024/1446;
+                    width: 400px;
+
+                    img[data-input="bg-input"] {
+                        aspect-ratio: 1024/1446;
+                    }
+
+                    .client-img {
+                        top: 66px;
+                        right: 139px;
+                        width: 121px;
+                    }
+
+                    .customer-name {
+                        bottom: 106px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .ticket-type-3 {
+
+            .img-area {
+
+                .image-container {
+                    aspect-ratio: 1446/1024;
+                    width: 700px;
+
+                    img[data-input="bg-input"] {
+                        aspect-ratio: 1446/1024;
+                    }
+
+                    .client-img {
+                        top: 52px;
+                        right: 274px;
+                        width: 152px;
+                    }
+
+                    .customer-name {
+                        bottom: 130px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .ticket-option {
+        padding: 0 10px;
+
+        .option-item {
+            margin: 5px 0;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 15px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 15px;
+                    height: 15px;
+                    background: #04AA6D;
+                    cursor: pointer;
+                }
+
+                &::-moz-range-thumb {
+                    width: 15px;
+                    height: 15px;
+                    background: #04AA6D;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .h-orientation {
+            display: flex;
+
+            div {
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+            }
+
+            label {
+                margin: 0;
+                min-width: 30%;
+            }
+        }
+    }
+
+    .active {
+        display: block !important;
+    }
+}

@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "caveat";
+  src: url(./fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "dancing";
+  src: url(./fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "lobster";
+  src: url(./fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: "pacifico";
+  src: url(./fonts/Pacifico-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ticket-area {
+  display: grid;
+  grid-template-columns: 65% auto;
+  gap: 10px;
+}
+.ticket-area .ticket-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket-area .ticket-template .img-custom {
+  margin: 20px;
+  display: none;
+}
+.ticket-area .ticket-template .img-custom .img-area .image-container {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  position: relative;
+}
+.ticket-area .ticket-template .img-custom .img-area .image-container img {
+  width: 100%;
+}
+.ticket-area .ticket-template .img-custom .img-area .image-container .client-img {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-clip-path: circle(50%);
+  clip-path: circle(50%);
+  aspect-ratio: 1/1;
+}
+.ticket-area .ticket-template .img-custom .img-area .image-container .client-img img {
+  width: 100%;
+  background-color: #000;
+}
+.ticket-area .ticket-template .img-custom .img-area .image-container .customer-name {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  right: 0px;
+  width: 50%;
+}
+.ticket-area .ticket-template .img-custom .img-area .image-container .customer-name p {
+  font-size: 26px;
+}
+.ticket-area .ticket-template .img-custom .upload-img {
+  margin: 20px 0;
+  text-align: center;
+}
+.ticket-area .ticket-template .ticket-type-1 .img-area .image-container {
+  aspect-ratio: 2048/1446;
+  width: 700px;
+}
+.ticket-area .ticket-template .ticket-type-1 .img-area .image-container img[data-input=bg-input] {
+  aspect-ratio: 2048/1446;
+}
+.ticket-area .ticket-template .ticket-type-1 .img-area .image-container .client-img {
+  top: 77px;
+  right: 98px;
+  width: 151px;
+}
+.ticket-area .ticket-template .ticket-type-1 .img-area .image-container .customer-name {
+  bottom: 106px;
+}
+.ticket-area .ticket-template .ticket-type-2 .img-area .image-container {
+  aspect-ratio: 1024/1446;
+  width: 400px;
+}
+.ticket-area .ticket-template .ticket-type-2 .img-area .image-container img[data-input=bg-input] {
+  aspect-ratio: 1024/1446;
+}
+.ticket-area .ticket-template .ticket-type-2 .img-area .image-container .client-img {
+  top: 66px;
+  right: 139px;
+  width: 121px;
+}
+.ticket-area .ticket-template .ticket-type-2 .img-area .image-container .customer-name {
+  bottom: 106px;
+  width: 100%;
+}
+.ticket-area .ticket-template .ticket-type-3 .img-area .image-container {
+  aspect-ratio: 1446/1024;
+  width: 700px;
+}
+.ticket-area .ticket-template .ticket-type-3 .img-area .image-container img[data-input=bg-input] {
+  aspect-ratio: 1446/1024;
+}
+.ticket-area .ticket-template .ticket-type-3 .img-area .image-container .client-img {
+  top: 52px;
+  right: 274px;
+  width: 152px;
+}
+.ticket-area .ticket-template .ticket-type-3 .img-area .image-container .customer-name {
+  bottom: 130px;
+  width: 100%;
+}
+.ticket-area h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+.ticket-area .ticket-option {
+  padding: 0 10px;
+}
+.ticket-area .ticket-option .option-item {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.ticket-area .ticket-option .option-item label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.ticket-area .ticket-option .option-item .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.ticket-area .ticket-option .option-item .slider:hover {
+  opacity: 1;
+}
+.ticket-area .ticket-option .option-item .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.ticket-area .ticket-option .option-item .slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.ticket-area .ticket-option .h-orientation {
+  display: flex;
+}
+.ticket-area .ticket-option .h-orientation div {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.ticket-area .ticket-option .h-orientation label {
+  margin: 0;
+  min-width: 30%;
+}
+.ticket-area .active {
+  display: block !important;
+}/*# sourceMappingURL=style.css.map */

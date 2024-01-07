@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Ticket/style.css">
+</head>
+<body>
+    <div class="ticket-area">
+        <div class="ticket-template">
+            <h2>Xem trước</h2>
+            <div class="img-custom ticket-type-1 active">
+                <div class="img-area">
+                    <div class="image-container">
+                        <img class="img-upload" alt="Uploaded Image" src="/Ticket/img/vip-ticket-1-template.jpg" data-input="bg-input">
+                        <div class="client-img">
+                            <img class="img-upload avatar-input" src="" alt="" id="avatar-input" data-input="avatar-input">
+                        </div>
+                        <div class="customer-name">
+                            <p>Họ và tên</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-custom ticket-type-2">
+                <div class="img-area">
+                    <div class="image-container">
+                        <img class="img-upload" alt="Uploaded Image" src="/Ticket/img/vip-ticket-2-template.jpg" data-input="bg-input">
+                        <div class="client-img">
+                            <img class="img-upload avatar-input" src="" alt="" id="avatar-input" data-input="avatar-input">
+                        </div>
+                        <div class="customer-name">
+                            <p>Họ và tên</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-custom ticket-type-3">
+                <div class="img-area">
+                    <div class="image-container">
+                        <img class="img-upload" alt="Uploaded Image" src="/Ticket/img/vip-ticket-3-template.jpg" data-input="bg-input">
+                        <div class="client-img">
+                            <img class="img-upload avatar-input" src="" alt="" id="avatar-input" data-input="avatar-input">
+                        </div>
+                        <div class="customer-name">
+                            <p>Họ và tên</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-option">
+            <h2>Lựa chọn</h2>
+            <div class="option-item">
+                <label for="template">Chọn khung mẫu vẽ: </label>
+                <div class="option">
+                    <img src="" alt="">
+                    <input type="radio" name="template" value="1" checked>
+                    <span>Kiểu 1 (Kích thước 2048x1446)</span>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <input type="radio" name="template" value="2">
+                    <span>Kiểu 2 (Kích thước 1024x1446)</span>
+                </div>
+                <div class="option">
+                    <img src="" alt="">
+                    <input type="radio" name="template" value="3">
+                    <span>Kiểu 3 (Kích thước 1446x1024)</span>
+                </div>
+            </div>
+            <div class="option-item upload-img">
+                <label for="bg-input">Tải ảnh nền</label>
+                <input type="file" id="bg-input" name="bg-input" accept="image/*">
+            </div>
+            <div class="option-item upload-img">
+                <label for="avatar-input">Tải ảnh đại diện</label>
+                <input type="file" id="avatar-input" name="avatar-input" accept="image/*">
+            </div>
+            <div class="option-item">
+                <label for="horizonal-input">Ngang</label>
+                <input class="slider" type="range" min="-100" max="100" value="0" id="horizonal-input">
+                <label for="vertical-input">Dọc</label>
+                <input class="slider" type="range" min="-100" max="100" value="0" id="vertical-input">
+                <label for="zoom-input">Thu/Phóng</label>
+                <input class="slider" type="range" min="0" max="3" step="0.01" value="1" id="zoom-input">
+            </div>
+            <div class="option-item">
+                <label for="customer-input">Tên khách mời</label>
+                <input type="text" name="customer-input">
+            </div>
+            <div class="option-item h-orientation">
+                <div>
+                    <label for="font-input">Font chữ:</label>
+                    <select name="font-input">
+                        <option value="">- Chọn font chữ -</option>
+                        <option value="caveat">Caveat</option>
+                        <option value="dancing">Dancing</option>
+                        <option value="lobster">Lobster</option>
+                        <option value="pacifico">Pacifico</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="size-input">Cỡ chữ: <span>14px</span></label>
+                    <input type="range" class="slider" name="size-input" min="10" max="40" value="14">
+                </div>
+                <div>
+                    <label for="color-input">Màu chữ:</label>
+                    <input type="color" name="color-input">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/Ticket/main.js"></script>
+
+</body>
+</html>
